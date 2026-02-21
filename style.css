@@ -17,6 +17,7 @@ header {
   width: 100%;
   background: rgba(10, 15, 30, 0.9);
   border-bottom: 1px solid #1f2a44;
+  z-index: 1000;
 }
 
 .navbar {
@@ -50,7 +51,7 @@ header {
   color: #3cc7ff;
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
   min-height: 100vh;
   padding: 120px 20px 60px;
@@ -87,6 +88,7 @@ header {
   padding: 12px 24px;
   border-radius: 30px;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .primary {
@@ -142,9 +144,20 @@ header {
   display: inline-block;
 }
 
-/* Contact */
+/* Contact Section */
 .contact-info p {
   margin: 8px 0;
+}
+
+/* Contact Links (NEW – IMPORTANT) */
+.contact-info a {
+  color: #3cc7ff;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
 }
 
 /* Footer */
@@ -153,4 +166,9 @@ footer {
   padding: 20px;
   border-top: 1px solid #1f2a44;
   color: #aaa;
+}
+
+/* Global link cursor */
+a {
+  cursor: pointer;
 }
