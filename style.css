@@ -46,7 +46,6 @@ header {
   text-decoration: none;
 }
 
-.nav-links a.active,
 .nav-links a:hover {
   color: #3cc7ff;
 }
@@ -79,31 +78,13 @@ header {
   color: #d1d5ff;
 }
 
-.buttons {
-  display: flex;
-  gap: 15px;
-}
-
-.btn {
-  padding: 12px 24px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.primary {
-  background: #3cc7ff;
-  color: #000;
-}
-
-.secondary {
-  border: 1px solid #a855f7;
-  color: #a855f7;
-}
-
+/* Profile Image */
 .hero-image img {
-  width: 320px;
-  border-radius: 20px;
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #3cc7ff;
 }
 
 /* Sections */
@@ -119,8 +100,13 @@ header {
   margin-bottom: 10px;
 }
 
+.section h3 {
+  margin: 20px 0 10px;
+  color: #3cc7ff;
+}
+
 .section p {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #cdd6ff;
 }
 
@@ -128,6 +114,7 @@ header {
   background: #070b14;
 }
 
+/* Lists */
 .list {
   list-style: none;
 }
@@ -142,6 +129,17 @@ header {
   padding: 20px;
   border-radius: 15px;
   display: inline-block;
+  min-width: 300px;
+}
+
+/* Certificate Viewer */
+iframe {
+  width: 100%;
+  height: 500px;
+  border: 2px solid #3cc7ff;
+  border-radius: 12px;
+  margin-top: 10px;
+  background: white;
 }
 
 /* Contact Section */
@@ -149,7 +147,6 @@ header {
   margin: 8px 0;
 }
 
-/* Contact Links (NEW – IMPORTANT) */
 .contact-info a {
   color: #3cc7ff;
   text-decoration: none;
@@ -168,7 +165,7 @@ footer {
   color: #aaa;
 }
 
-/* Global link cursor */
+/* Cursor */
 a {
   cursor: pointer;
 }
