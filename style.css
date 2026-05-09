@@ -97,17 +97,17 @@ header {
 
 .section h2 {
   font-size: 36px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .section h3 {
-  margin: 20px 0 10px;
+  margin: 20px 0;
   color: #3cc7ff;
 }
 
 .section p {
-  margin-bottom: 20px;
   color: #cdd6ff;
+  margin-bottom: 20px;
 }
 
 .section.dark {
@@ -120,7 +120,7 @@ header {
 }
 
 .list li {
-  margin: 10px 0;
+  margin: 12px 0;
 }
 
 /* Cards */
@@ -132,9 +132,10 @@ header {
   min-width: 300px;
 }
 
-/* Certificate Viewer */
+/* Video + Certificate */
 iframe {
   width: 100%;
+  max-width: 900px;
   height: 500px;
   border: 2px solid #3cc7ff;
   border-radius: 12px;
@@ -142,15 +143,71 @@ iframe {
   background: white;
 }
 
+/* Message Me Section */
+.message-box {
+  max-width: 850px;
+  margin: auto;
+  background: #11172a;
+  border: 2px solid #3cc7ff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(60, 199, 255, 0.25);
+}
+
+.message-box p {
+  color: #d1d5ff;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.message-box input {
+  width: 48%;
+  padding: 18px;
+  margin: 10px 1%;
+  border: 2px solid #3cc7ff;
+  border-radius: 12px;
+  background: #0b0f1a;
+  color: white;
+  font-size: 18px;
+}
+
+.message-box textarea {
+  width: 98%;
+  padding: 18px;
+  margin: 15px 1%;
+  border: 2px solid #a855f7;
+  border-radius: 12px;
+  background: #0b0f1a;
+  color: white;
+  font-size: 18px;
+  min-height: 180px;
+  resize: none;
+}
+
+.message-box button {
+  background: linear-gradient(90deg, #3cc7ff, #a855f7);
+  color: white;
+  border: none;
+  padding: 16px 40px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.message-box button:hover {
+  opacity: 0.9;
+}
+
 /* Contact Section */
 .contact-info p {
-  margin: 8px 0;
+  margin: 10px 0;
 }
 
 .contact-info a {
   color: #3cc7ff;
   text-decoration: none;
-  word-break: break-all;
 }
 
 .contact-info a:hover {
@@ -166,6 +223,7 @@ footer {
 }
 
 /* Cursor */
-a {
+a,
+button {
   cursor: pointer;
 }
